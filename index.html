@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="icon" href="./assets/images/logoA.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/styles/sweetalert2.min.css" />
+  <link rel="stylesheet" href="./assets/styles/login.css" />
+  <link rel="stylesheet" href="./assets/styles/spinner.css" />
+  <script src="./libs/jquery-3.6.3.min.js"></script>
+  <script src="./libs/popper.min.js"></script>
+  <script src="./libs/bootstrap.bundle.min.js"></script>
+  <script src="./libs/all.min.js"></script>
+  <script src="./libs/sweetalert2.all.min.js"></script>
+  <script src="./libs/jquery.blockUI.min.js"></script>
+  <script src="./libs/globalFunctions.js"></script>
+</head>
+
+<body>
+  <form class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto" id="formLogin">
+    <div class="card card0 border-0">
+      <div class="row d-flex">
+        <div class="col-lg-6">
+          <div class="card1 pb-5">
+            <div class="row">
+              <img src="./assets/images/logoA.png" class="logo" />
+            </div>
+            <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
+              <img src="./assets/images/fondo.png" class="image" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card2 card border-0 px-4 py-5">
+            <div class="row mb-4 px-3">
+              <div class="line col-md-12 col-lg-12"></div>
+            </div>
+            <div class="row px-3 mb-4">
+              <h2>BIENVENIDO</h2>
+            </div>
+            <div class="row px-3 mb-4">
+              <h5 id="nombre"></h5>
+            </div>
+            <div class="row px-3 mb-4">
+              <span class="text-danger" id="alertLogin"></span>
+            </div>
+            <div class="row px-3">
+              <label class="mb-1" for="usuario">
+                <h6 class="mb-0 text-sm">User <span class="text-danger">*</span></h6>
+              </label>
+              <input class="mb-4 form-control" type="text" id="usuario" name="usuario" required />
+            </div>
+            <div class="row px-3">
+              <label class="mb-1" for="pass">
+                <h6 class="mb-0 text-sm">Pasword <span class="text-danger">*</span></h6>
+              </label>
+              <input type="password" id="pass" name="pass" class="form-control" required />
+            </div>
+            <div class="row px-3">
+            </div>
+            <div class="row mt-3 mb-3 px-3">
+              <button type="submit" id="btnLogin" class="btn btn-primary text-center">
+                Login
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <div class="row mt-3 mb-3 px-3 justify-content-end">
+              <div class="col-auto">
+                <a href="./html/demo.html">Demo <i class="fa-regular fa-chart-bar"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-blue py-4">
+        <div class="row px-3">
+          <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2019. All rights reserved.</small>
+          <div class="social-contact ml-4 ml-sm-auto">
+            <span class="mr-4 text-sm"><i class="fa-brands fa-whatsapp"></i></span>
+            <span class="mr-4 text-sm"><i class="fa-brands fa-facebook"></i></span>
+            <span class="mr-4 text-sm"><i class="fa-brands fa-google-plus-g"></i></span>
+            <span class="mr-4 mr-sm-5 text-sm"><i class="fa-brands fa-twitter"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

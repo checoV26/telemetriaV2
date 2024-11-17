@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="../assets/images/logoA.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/styles/menu.css" />
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/styles/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../assets/styles/spinner.css" />
+    <link rel="stylesheet" href="../assets/styles/bootstrap-select.min.css">
+    <script src="../libs/jquery-3.6.3.min.js"></script>
+    <script src="../libs/popper.min.js"></script>
+    <script src="../libs/bootstrap.bundle.min.js"></script>
+    <script src="../libs/all.min.js"></script>
+    <script src="../libs/sweetalert2.all.min.js"></script>
+    <script src="../libs/jquery.blockUI.min.js"></script>
+    <script src="../libs/mqtt.min.js"></script>
+    <script src="../libs/raphael-2.1.4.min.js"></script>
+    <script src="../libs/justgage.js"></script>
+    <script src="../libs/bootstrap-select.min.js"></script>
+    <script src="../libs/globalFunctions.js"></script>
+    <script src="../config/config.js"></script>
+    <script src="../config/mqtt-client.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg mb-4" id="main_navbar">
+        <picture><img src="../assets/images/logo.avif" width="70" height="70"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                alt="asBombeo" /></picture>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-water text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="ulMenu">
+                <li class="nav-item dropdown"></li>
+                <li class="nav-item dropdown"></li>
+                <li class="nav-item dropdown"></li>
+                <li class="nav-item dropdown"></li>
+                <li class="nav-item dropdown"></li>
+                <li class="nav-item dropdown"> <a href="#" onclick="deleteData()" rel="noopener noreferrer">Regresar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form action="" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-start d-flex row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div id="statusConnected"><i class="fa-solid fa-circle text-danger"></i> Desconectado.....</div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <label for="idProyect">Proyectos <span class="text-danger">*</span></label>
+            <select name="idProyect" id="idProyect" class="form-control form-control-sm selectpicker"
+                data-live-search="true" title="---------------------------" data-size="10">
+                <option class="text-dark" value="DATAJSON/B1">Proyect 1</option>
+                <option class="text-dark" value="DATAJSON/B2">Proyect 2</option>
+                <option class="text-dark" value="DATAJSON/B3">Proyect 3</option>
+            </select>
+        </div>
+    </form>
+    <form action="" class="col-12 mt-5 mb-5">
+        <div class="row" id="viewCard">
+        </div>
+    </form>
+    <script src="../js/demo.js"></script>
+</body>
+
+</html>
